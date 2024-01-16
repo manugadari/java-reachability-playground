@@ -1,9 +1,10 @@
-name: Run SonarQube with Maven
-
+name: SAST SCAN
 on: push
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    name: Run unit tests and SAST scan on the source code 
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17
